@@ -77,6 +77,9 @@ export interface Adapter {
   linkAccount?: (
     account: AdapterAccount
   ) => Promise<void> | Awaitable<AdapterAccount | null | undefined>
+  updateAccount?: (
+    account: AdapterAccount
+  ) => Promise<void> | Awaitable<AdapterAccount | null | undefined>
   /** @todo Implement */
   unlinkAccount?: (
     providerAccountId: Pick<AdapterAccount, "provider" | "providerAccountId">
