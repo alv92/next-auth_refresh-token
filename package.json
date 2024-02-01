@@ -4,7 +4,7 @@
   "private": true,
   "repository": "https://github.com/nextauthjs/next-auth.git",
   "scripts": {
-    "prepare": "npm install && npm run build",
+    "prepare": "npm install pnpm && pnpm install && pnpm run build",
     "build:app": "turbo run build --filter=next-auth-app",
     "build": "turbo run build --filter=next-auth --no-deps",
     "lint": "turbo run lint --filter=!next-auth-docs --parallel",
