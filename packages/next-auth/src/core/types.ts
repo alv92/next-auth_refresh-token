@@ -206,6 +206,9 @@ export interface AuthOptions {
    * [Documentation](https://next-auth.js.org/configuration/options#cookies) | [Usage example](https://next-auth.js.org/configuration/options#example)
    */
   cookies?: Partial<CookiesOptions>
+  experimental?: {
+    updateAccountOnLogin: boolean,
+  }
 }
 
 /**
@@ -608,6 +611,9 @@ export interface InternalOptions<TProviderType = ProviderType> {
   callbacks: CallbacksOptions
   cookies: CookiesOptions
   callbackUrl: string
+  experimental?: {
+    updateAccountOnLogin: boolean
+  }
 }
 
 /** @internal */
